@@ -15,5 +15,11 @@ const products = [
         price: 3.50
     }
 ]
-const displayProdycts = () =>products.forEach(product => {console.log(product)})
-displayProdycts()
+
+
+function addProduct(productId, productName, productPrice) {
+    products.push({id:productId, name:productName, price:productPrice})
+}
+
+addProduct(4, "cerveza", 5)
+console.log(products)
