@@ -15,5 +15,8 @@ const products = [
         price: 3.50
     }
 ]
-const displayProdycts = () =>products.forEach(product => {console.log(product)})
-displayProdycts()
+
+const productsStartsWithC = () =>{
+    return products.filter(product => product.name.startsWith('C'))
+}
+console.log(productsStartsWithC())
