@@ -35,3 +35,7 @@ function editProduct(productId, productName, productPrice) {
 
 editProduct(4, "beber cerveza", 10)
 console.log(products)
+function multiplyBy10 () {
+    return products.map(product =>  product.price * 10)
+}
+console.log(multiplyBy10())
